@@ -1,0 +1,455 @@
+{
+    "items" : [
+        {
+            "id":1,
+            "displayName":"Manish Parihar",
+            "firstName":"Manish",
+            "lastName":"Parihar",
+            "dateOfBirth":"01-01-1987",
+            "place":"Berlin",
+            "country":"Germany",
+            "phoneNumber":"01625660529",
+            "email":"manishparihar244@gmail.com",
+            "photo":"",
+            "designation":"Senior Mobile Consultant",
+            "tagline":"Energetic Mobile Consultant.....",
+            "educationBackground":[
+                {
+                  "degreeID":"D01",
+                  "degreeUniversityName":"Berlin University of Applied Science",
+                  "degreeUniversityPlace":"Berlin",
+                  "degreeUniversityCountry":"Germany",
+                  "degreeName":"Master of Science",
+                  "degreeCourse":"Data Science",
+                  "degreeStartYear":"2017",
+                  "degreeEndYear":"2020"
+                },
+                {
+                  "degreeID":"D02",
+                  "degreeUniversityName":"Rajiv Gandhi Technical University",
+                  "degreeUniversityPlace":"Bhopal",
+                  "degreeUniversityCountry":"India",
+                  "degreeName":"Bachelors of Engineering",
+                  "degreeCourse":"Information Technology",
+                  "degreeStartYear":"2006",
+                  "degreeEndYear":"2010"
+                }
+            ],
+            "workExperience":[
+                {
+                  "workID":"C01",
+                  "workCompany":"Autonomy OnBoard GmbH",
+                  "workPlace":"Berlin",
+                  "workCountry":"Germany",
+                  "workDesignation":"Senior IOS Developer",
+                  "workCompanyLogo":"",
+                  "workStartDate":"Dec 2022",
+                  "workEndDate":"Present",
+                  "workDescription":[
+                      {
+                      "workDescId":"desc01",
+                      "workDescStmt":[
+                          "Communicating implications of architectural decisions, issues, and plans to business and IT Leadership",
+                          "Providing technical and architectural leadership for both hybrid and native mobile applications",
+                          "Nissan Hub: Worked on clients’ IOS app and provided a Car Play-enabled AI-generated voice-based short and smart messaging app.",
+                          "Developed Nissan Hub app in SwiftUI.",
+                          "Livil Flag: Worked on Automobile infotainment app (car play ios and Android app on voice-based short messaging service) with Work-API (Email, whats-app, We-Chat, etc) integration.",
+                          "Livil flag application development and integration is in the Flutter framework.",
+                          "Developing full stack web development of Nissan connect sponsor channel in Vue.js for vehicle information.",
+                          "Handling Jira board, converting user stories to tickets, and prioritizing the backlogs."
+                      ]
+                      
+                      }
+                  ]
+                },
+                {
+                  "workID":"C02",
+                  "workCompany":"Vektorat GmbH",
+                  "workPlace":"Berlin",
+                  "workCountry":"Germany",
+                  "workDesignation":"Lead Developer (Mobile)",
+                  "workCompanyLogo":"",
+                  "workStartDate":"Jul 2021",
+                  "workEndDate":"Nov 2022",
+                  "workDescription":[
+                      {
+                      "workDescId":"desc02",
+                      "workDescStmt":[
+                          "Created and maintained the solution vision, road map, and backlog of work through the project’s life cycle.",
+                          "Participated in technical design sessions in coordination with software and mobile application development teams.",
+                          "Setup, design, and maintaining database: Google Firebase, Flame-link (Content Management System)",
+                          "Amplitude analytics for tracking user events. Integrated multiple react-native modules such as react-navigation, react-native-Firebase, Rating, and Reviews.",
+                          "Maintain Code version with Git track event with Agile methodology, Microsoft Team.",
+                          "Suggestedopportunitiesforexpansionofexistingmobileapplications for governance and reusability.",
+                          "ElternGuide Android & IOS App developed in React Native Framework"
+                      ]
+                      }
+                  ]
+                },
+                {
+                  "workID":"C03",
+                  "workCompany":"ImmoMea GmbH",
+                  "workPlace":"Berlin",
+                  "workCountry":"Germany",
+                  "workDesignation":"Software Consultant",
+                  "workCompanyLogo":"",
+                  "workStartDate":"Aug 2020",
+                  "workEndDate":"Jun 2021",
+                  "workDescription":[
+                      {
+                          "workDescId":"desc03",
+                          "workDescStmt":[
+                          "Immo Estate App | B2B application based on real estate. The app collects new customers’ information for business development, the entire process of lead management, sales, business, and document creation, and shows data analytics for sales numbers and feedback."]
+                      }
+                  ]
+                },
+                {
+                  "workID":"C04",
+                  "workCompany":"Berliner Hochschule Für Technik",
+                  "workPlace":"Berlin",
+                  "workCountry":"Germany",
+                  "workDesignation":"Research Assistant (Data Science)",
+                  "workCompanyLogo":"",
+                  "workStartDate":"Feb 2018",
+                  "workEndDate":"Apr 2020",
+                  "workDescription":[ {
+                      "workDescId":"desc04",
+                      "workDescStmt":[
+                          "PocketFriend IOS App | Developed AI-based ChatBot, an application that stores user experience like capturing emotion, and behavior and generating solutions based on an algorithm and built a suggestion-based recommendation system for users.",
+                          "Build full-cycle analytics, reports, and publishing blogs based on cryptocurrencies’ latest trends.",
+                          "Machine Learning Algorithm to detect data patterns in the Ethereum transaction network. The objective is to build predictive models to discover which transactions are malicious and data accuracy."]
+                      }]
+                },
+                {
+                  "workID":"C05",
+                  "workCompany":"Leap & Scale Growth Partners",
+                  "workPlace":"Pune",
+                  "workCountry":"India",
+                  "workDesignation":"Software Consultant (Mobile)",
+                  "workCompanyLogo":"",
+                  "workStartDate":"Oct 2015",
+                  "workEndDate":"Nov 2017",
+                  "workDescription":[
+                      {
+                      "workDescId":"desc05",
+                      "workDescStmt":[
+                          "Conducted evaluation and selection of best technologies to meet business and strategic needs.",
+                          "Review product requirements and transform them into technical specifications.",
+                          "Work with the team to break down projects into deliverables and milestones.",
+                          "Leading the whole mobile team (including Back-end, iOS, Android) and clearing bottlenecks for smooth delivery.",
+                          "Facilitate discussions about client architecture and design and help identify and scope API requirements, including request and response data.",
+                          "Ensure iOS and Android are consistent in behavior and features.",
+                          "Keep up with mobile trends and identify high-leverage opportunities to improve mobile products or technology.",
+                          "Incorporated Agile methodologies to efficiently manage the team’s responsibilities."
+                      ]
+                      }
+                  ]
+                },
+                {
+                  "workID":"C06",
+                  "workCompany":"Zoftech System & Solutions",
+                  "workPlace":"Dubai",
+                  "workCountry":"UAE",
+                  "workDesignation":"IOS Lead Programmer",
+                  "workCompanyLogo":"",
+                  "workStartDate":"Oct 2010",
+                  "workEndDate":"Sept 2015",
+                  "workDescription":[
+                      {
+                      "workDescId":"desc06",
+                      "workDescStmt":[
+                          "Responsible for establishing and maintaining the app architecture in iOS.",
+                          "Taking up user stories, developing and testing ios apps end to end.",
+                          "Implementing Reusable components that can be used by fellow team members.",
+                          "Assigning bugs to team members and assisting them to fix the same.",
+                          "Oben|DeployedVoicebasedsocialnetworkingappaimedtoprovide an anonymous voice-based filter to modulate the original voice of the user.",
+                          "Developed applications in various Domains including Health-Care, Social-Network, Sports & Fitness, Beauty & Wellness, E-commerce, TizenOS App, SMS Banking, and Utility Services."]
+                      }
+                  ]
+                }
+            ],
+            "programmingSkill":[
+                {
+                "skillId":"01",
+                "skillValue":"SwiftUI",
+                "skillPoints":"4"
+                },
+                {
+                "skillId":"02",
+                "skillValue":"Swift",
+                "skillPoints":"4"
+                },
+                {
+                "skillId":"03",
+                "skillValue":"Objective C",
+                "skillPoints":"4"
+                },
+                {
+                "skillId":"04",
+                "skillValue":"Python",
+                "skillPoints":"4"
+                },
+                {
+                "skillId":"05",
+                "skillValue":"R Language",
+                "skillPoints":"3"
+                },
+                {
+                "skillId":"06",
+                "skillValue":"TypeScript",
+                "skillPoints":"3"
+                },
+                {
+                "skillId":"07",
+                "skillValue":"Vue.js",
+                "skillPoints":"3"
+                },
+                {
+                "skillId":"08",
+                "skillValue":"Dart",
+                "skillPoints":"3"
+                },
+                {
+                "skillId":"09",
+                "skillValue":"SQL",
+                "skillPoints":"3"
+                }
+            ],
+            "projectSkill":[
+                {
+                    "projectId":"01",
+                    "projectValue":"Jira"
+                },
+                {
+                    "projectId":"02",
+                    "projectValue":"Microsoft Team"
+                },
+                {
+                    "projectId":"03",
+                    "projectValue":"Latex"
+                },
+                {
+                    "projectId":"04",
+                    "projectValue":"Slack"
+                },
+                {
+                    "projectId":"05",
+                    "projectValue":"Agile Methodology"
+                },
+                {
+                    "projectId":"06",
+                    "projectValue":"Scrum"
+                },
+                {
+                    "projectId":"07",
+                    "projectValue":"Kanban"
+                },
+                {
+                    "projectId":"08",
+                    "projectValue":"Trello"
+                },
+                {
+                    "projectId":"09",
+                    "projectValue":"Notion"
+                },
+                {
+                    "projectId":"10",
+                    "projectValue":"MS-Office"
+                }
+            ],
+            "frameworks":[
+                {
+                    "frameworkID":"f01",
+                    "frameworkSubject":"mobile",
+                    "frameworkValue":"SwiftUI"
+                },
+                {
+                    "frameworkID":"f02",
+                    "frameworkSubject":"mobile",
+                    "frameworkValue":"React-Native"
+                },
+                {
+                    "frameworkID":"f03",
+                    "frameworkSubject":"mobile",
+                    "frameworkValue":"Flutter"
+                },
+                {
+                    "frameworkID":"f04",
+                    "frameworkSubject":"mobile",
+                    "frameworkValue":"Google Firebase"
+                },
+                {
+                    "frameworkID":"f05",
+                    "frameworkSubject":"mobile",
+                    "frameworkValue":"Flame-link"
+                },
+                {
+                    "frameworkID":"f06",
+                    "frameworkSubject":"mobile",
+                    "frameworkValue":"Amplitude"
+                },
+                {
+                    "frameworkID":"f07",
+                    "frameworkSubject":"mobile",
+                    "frameworkValue":"Circle-CI"
+                },
+                {
+                    "frameworkID":"f08",
+                    "frameworkSubject":"mobile",
+                    "frameworkValue":"Fastlane"
+                },
+                {
+                    "frameworkID":"f09",
+                    "frameworkSubject":"mobile",
+                    "frameworkValue":"Figma"
+                },
+                {
+                    "frameworkID":"f10",
+                    "frameworkSubject":"ml-ai",
+                    "frameworkValue":"Pandas"
+                },
+                {
+                    "frameworkID":"f11",
+                    "frameworkSubject":"ml-ai",
+                    "frameworkValue":"Numpy"
+                },
+                {
+                    "frameworkID":"f12",
+                    "frameworkSubject":"ml-ai",
+                    "frameworkValue":"TensorFlow"
+                },
+                {
+                    "frameworkID":"f13",
+                    "frameworkSubject":"ml-ai",
+                    "frameworkValue":"Scikit-learn"
+                },
+                {
+                    "frameworkID":"f14",
+                    "frameworkSubject":"ml-ai",
+                    "frameworkValue":"Keras"
+                },
+                {
+                    "frameworkID":"f15",
+                    "frameworkSubject":"web-development",
+                    "frameworkValue":"Django"
+                },
+                {
+                    "frameworkID":"f16",
+                    "frameworkSubject":"web-development",
+                    "frameworkValue":"Flask"
+                }
+            ],
+            "tools":[
+                {
+                   "toolsID":"t01",
+                   "toolsName":"Xcode"
+                },
+                {
+                   "toolsID":"t02",
+                   "toolsName":"Microsoft Visual-Studio"
+                },
+                {
+                   "toolsID":"t03",
+                   "toolsName":"Android Studio"
+                },
+                {
+                   "toolsID":"t04",
+                   "toolsName":"Anaconda Navigator"
+                },
+                {
+                   "toolsID":"t05",
+                   "toolsName":"Jupyter-Notebook"
+                },
+                {
+                   "toolsID":"t06",
+                   "toolsName":"MS-Power Apps"
+                },
+                {
+                   "toolsID":"t07",
+                   "toolsName":"Postman"
+                },
+                {
+                   "toolsID":"t08",
+                   "toolsName":"Git"
+                },
+                {
+                   "toolsID":"t09",
+                   "toolsName":"Figma"
+                },
+                {
+                   "toolsID":"t10",
+                   "toolsName":"Wireframe"
+                }
+            ],
+            "interest":[
+                    {
+                        "interestsID":"i01",
+                        "interestsName":"Playing Ukulele"
+                    },
+                    {
+                        "interestsID":"i02",
+                        "interestsName":"Cycling"
+                    },
+                    {
+                        "interestsID":"i03",
+                        "interestsName":"Gardening"
+                    }
+            ],
+            "socialNetwork":[
+                {
+                    "socialID":"s01",
+                    "socialName":"Github",
+                    "socialValue":"https://github.com/manishparihar948"
+                },
+                {
+                    "socialID":"s02",
+                    "socialName":"Xing",
+                    "socialValue":"https://www.xing.com/profile/Manish_Parihar/cv"
+                },
+                {
+                    "socialID":"s03",
+                    "socialName":"Linkedin",
+                    "socialValue":""
+                },
+                {
+                    "socialID":"s04",
+                    "socialName":"Facebook",
+                    "socialValue":""
+                }
+                
+            ],
+            "spokenLanguage":[
+                    {
+                        "slID":"English",
+                        "slValue":"5"
+                    },
+                    {
+                        "slID":"German",
+                        "slValue":"3"
+                    }
+            ],
+            "achievements":[
+                {
+                    "achievementsID":"a01",
+                    "achievementsName":"President Award",
+                    "achievementsDesc":"Awarded by the President of India, Dr. A.P.J Abdul Kalam Sir in India Scouts",
+                    "achievementsYear":"2003"
+                },
+                {
+                    "achievementsID":"a02",
+                    "achievementsName":"ElectMe IOS App",
+                    "achievementsDesc":"Developed and released ios app for the Election Campaign for US President Candidate Jeb Bush",
+                    "achievementsYear":"2015"
+                },
+                {
+                    "achievementsID":"a03",
+                    "achievementsName":"Presentation & Poster",
+                    "achievementsDesc":"First Prize In Presentation, Poster Making in Leap & Scale Growth Partner",
+                    "achievementsYear":"2017"
+                }
+            ]
+        }
+    ]
+}
+
+

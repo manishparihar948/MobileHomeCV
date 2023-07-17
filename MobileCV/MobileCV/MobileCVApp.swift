@@ -11,7 +11,7 @@ import SwiftUI
 struct MobileCVApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeVC()
         }
     }
 }

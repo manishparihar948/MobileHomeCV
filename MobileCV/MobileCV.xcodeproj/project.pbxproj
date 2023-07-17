@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		CDC95B392A5CAC1400519E9D /* MobileCVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC95B382A5CAC1400519E9D /* MobileCVApp.swift */; };
-		CDC95B3B2A5CAC1400519E9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC95B3A2A5CAC1400519E9D /* ContentView.swift */; };
 		CDC95B3D2A5CAC1700519E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC95B3C2A5CAC1700519E9D /* Assets.xcassets */; };
 		CDC95B402A5CAC1700519E9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC95B3F2A5CAC1700519E9D /* Preview Assets.xcassets */; };
 		CDC95B4A2A5CAC1800519E9D /* MobileCVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC95B492A5CAC1800519E9D /* MobileCVTests.swift */; };
 		CDC95B542A5CAC1800519E9D /* MobileCVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC95B532A5CAC1800519E9D /* MobileCVUITests.swift */; };
 		CDC95B562A5CAC1800519E9D /* MobileCVUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC95B552A5CAC1800519E9D /* MobileCVUITestsLaunchTests.swift */; };
+		CDC95B642A5CAD3600519E9D /* CV.json in Resources */ = {isa = PBXBuildFile; fileRef = CDC95B632A5CAD3600519E9D /* CV.json */; };
+		CDC95B6A2A5D968100519E9D /* CVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC95B692A5D968100519E9D /* CVModel.swift */; };
+		CDCF63782A60A4380051A1A8 /* ExperienceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCF63772A60A4380051A1A8 /* ExperienceVC.swift */; };
+		CDF3B6EA2A5FDF6500B37655 /* CVViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF3B6E92A5FDF6500B37655 /* CVViewModel.swift */; };
+		CDF3B6EC2A5FE95000B37655 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF3B6EB2A5FE95000B37655 /* HomeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		CDC95B352A5CAC1400519E9D /* MobileCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC95B382A5CAC1400519E9D /* MobileCVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileCVApp.swift; sourceTree = "<group>"; };
-		CDC95B3A2A5CAC1400519E9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CDC95B3C2A5CAC1700519E9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDC95B3F2A5CAC1700519E9D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CDC95B452A5CAC1800519E9D /* MobileCVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileCVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,11 @@
 		CDC95B4F2A5CAC1800519E9D /* MobileCVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileCVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC95B532A5CAC1800519E9D /* MobileCVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileCVUITests.swift; sourceTree = "<group>"; };
 		CDC95B552A5CAC1800519E9D /* MobileCVUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileCVUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CDC95B632A5CAD3600519E9D /* CV.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CV.json; sourceTree = "<group>"; };
+		CDC95B692A5D968100519E9D /* CVModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVModel.swift; sourceTree = "<group>"; };
+		CDCF63772A60A4380051A1A8 /* ExperienceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceVC.swift; sourceTree = "<group>"; };
+		CDF3B6E92A5FDF6500B37655 /* CVViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVViewModel.swift; sourceTree = "<group>"; };
+		CDF3B6EB2A5FE95000B37655 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,12 @@
 		CDC95B372A5CAC1400519E9D /* MobileCV */ = {
 			isa = PBXGroup;
 			children = (
+				CDC95B682A5D966000519E9D /* Utils */,
+				CDC95B672A5D965B00519E9D /* View */,
+				CDC95B662A5D965600519E9D /* Model */,
+				CDC95B652A5D964F00519E9D /* ViewModel */,
+				CDC95B622A5CACBE00519E9D /* Database */,
 				CDC95B382A5CAC1400519E9D /* MobileCVApp.swift */,
-				CDC95B3A2A5CAC1400519E9D /* ContentView.swift */,
 				CDC95B3C2A5CAC1700519E9D /* Assets.xcassets */,
 				CDC95B3E2A5CAC1700519E9D /* Preview Content */,
 			);
@@ -125,6 +137,46 @@
 				CDC95B552A5CAC1800519E9D /* MobileCVUITestsLaunchTests.swift */,
 			);
 			path = MobileCVUITests;
+			sourceTree = "<group>";
+		};
+		CDC95B622A5CACBE00519E9D /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				CDC95B632A5CAD3600519E9D /* CV.json */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		CDC95B652A5D964F00519E9D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CDF3B6E92A5FDF6500B37655 /* CVViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CDC95B662A5D965600519E9D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CDC95B692A5D968100519E9D /* CVModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CDC95B672A5D965B00519E9D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CDF3B6EB2A5FE95000B37655 /* HomeVC.swift */,
+				CDCF63772A60A4380051A1A8 /* ExperienceVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CDC95B682A5D966000519E9D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDC95B642A5CAD3600519E9D /* CV.json in Resources */,
 				CDC95B402A5CAC1700519E9D /* Preview Assets.xcassets in Resources */,
 				CDC95B3D2A5CAC1700519E9D /* Assets.xcassets in Resources */,
 			);
@@ -257,8 +310,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDC95B3B2A5CAC1400519E9D /* ContentView.swift in Sources */,
+				CDC95B6A2A5D968100519E9D /* CVModel.swift in Sources */,
+				CDF3B6EC2A5FE95000B37655 /* HomeVC.swift in Sources */,
 				CDC95B392A5CAC1400519E9D /* MobileCVApp.swift in Sources */,
+				CDCF63782A60A4380051A1A8 /* ExperienceVC.swift in Sources */,
+				CDF3B6EA2A5FDF6500B37655 /* CVViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
