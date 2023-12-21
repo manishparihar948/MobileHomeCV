@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD7757082B344C2A00DBBEB6 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7757072B344C2A00DBBEB6 /* Theme.swift */; };
+		CD77570A2B344CC100DBBEB6 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7757092B344CC100DBBEB6 /* Symbols.swift */; };
 		CDC95B392A5CAC1400519E9D /* MobileCVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC95B382A5CAC1400519E9D /* MobileCVApp.swift */; };
 		CDC95B3D2A5CAC1700519E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC95B3C2A5CAC1700519E9D /* Assets.xcassets */; };
 		CDC95B402A5CAC1700519E9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC95B3F2A5CAC1700519E9D /* Preview Assets.xcassets */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD7757072B344C2A00DBBEB6 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		CD7757092B344CC100DBBEB6 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
 		CDC95B352A5CAC1400519E9D /* MobileCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC95B382A5CAC1400519E9D /* MobileCVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileCVApp.swift; sourceTree = "<group>"; };
 		CDC95B3C2A5CAC1700519E9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD7757062B344C0700DBBEB6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD7757072B344C2A00DBBEB6 /* Theme.swift */,
+				CD7757092B344CC100DBBEB6 /* Symbols.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		CDC95B2C2A5CAC1400519E9D = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +115,7 @@
 		CDC95B372A5CAC1400519E9D /* MobileCV */ = {
 			isa = PBXGroup;
 			children = (
+				CD7757062B344C0700DBBEB6 /* Resources */,
 				CDC95B682A5D966000519E9D /* Utils */,
 				CDC95B672A5D965B00519E9D /* View */,
 				CDC95B662A5D965600519E9D /* Model */,
@@ -243,7 +257,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					CDC95B342A5CAC1400519E9D = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -313,8 +327,10 @@
 				CDC95B6A2A5D968100519E9D /* CVModel.swift in Sources */,
 				CDF3B6EC2A5FE95000B37655 /* HomeVC.swift in Sources */,
 				CDC95B392A5CAC1400519E9D /* MobileCVApp.swift in Sources */,
+				CD7757082B344C2A00DBBEB6 /* Theme.swift in Sources */,
 				CDCF63782A60A4380051A1A8 /* ExperienceVC.swift in Sources */,
 				CDF3B6EA2A5FDF6500B37655 /* CVViewModel.swift in Sources */,
+				CD77570A2B344CC100DBBEB6 /* Symbols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +371,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -387,6 +404,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -415,6 +433,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -447,6 +466,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
