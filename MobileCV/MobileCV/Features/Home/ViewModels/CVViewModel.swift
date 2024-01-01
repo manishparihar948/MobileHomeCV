@@ -14,7 +14,8 @@ class CVViewModel: ObservableObject {
     
     var error: Error?
     
-    func fetchCVDataFromAPI() {
+    @MainActor
+    func fetchCVDataFromAPI() async {
         // When fetching data
         isLoading = true
         

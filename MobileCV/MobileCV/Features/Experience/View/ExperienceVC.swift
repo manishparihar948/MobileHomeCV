@@ -20,6 +20,7 @@ struct ExperienceVC: View {
                 ExperienceRow(viewModel: viewModel)
             }
         }
+        .customNavigationView(backgroundColor: Theme.cvTheme)
         .navigationTitle("Work Experience")
         .navigationBarBackButtonHidden(true)
                .navigationBarItems(leading: backButton)

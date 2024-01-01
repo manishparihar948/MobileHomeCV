@@ -30,6 +30,7 @@ struct ItemData: Codable, Hashable {
     let photo: String
     let designation: String
     let tagline: String
+    let intro: String
     let educationBackground: [EducationBackground]?
     let workExperience: [WorkExperience]
     let programmingSkil: [ProgrammingSkill]?
