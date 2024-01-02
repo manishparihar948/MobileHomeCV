@@ -9,8 +9,6 @@ import SwiftUI
 
 struct AchievementVC: View {
     
-    
-    
     var body: some View {
         NavigationStack {
             List {

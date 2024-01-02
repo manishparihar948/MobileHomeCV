@@ -20,6 +20,7 @@
 		CD7757162B35864200DBBEB6 /* EducationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7757152B35864200DBBEB6 /* EducationVC.swift */; };
 		CD77577E2B36A1A200DBBEB6 /* TypographyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77577D2B36A1A100DBBEB6 /* TypographyStyle.swift */; };
 		CD7757812B36A74700DBBEB6 /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7757802B36A74700DBBEB6 /* Dimension.swift */; };
+		CD85B0B32B44B20300297925 /* FrameworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD85B0B22B44B20300297925 /* FrameworkVC.swift */; };
 		CDC95B392A5CAC1400519E9D /* MobileCVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC95B382A5CAC1400519E9D /* MobileCVApp.swift */; };
 		CDC95B3D2A5CAC1700519E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC95B3C2A5CAC1700519E9D /* Assets.xcassets */; };
 		CDC95B402A5CAC1700519E9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC95B3F2A5CAC1700519E9D /* Preview Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		CD7757152B35864200DBBEB6 /* EducationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationVC.swift; sourceTree = "<group>"; };
 		CD77577D2B36A1A100DBBEB6 /* TypographyStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypographyStyle.swift; sourceTree = "<group>"; };
 		CD7757802B36A74700DBBEB6 /* Dimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
+		CD85B0B22B44B20300297925 /* FrameworkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkVC.swift; sourceTree = "<group>"; };
 		CDC95B352A5CAC1400519E9D /* MobileCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC95B382A5CAC1400519E9D /* MobileCVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileCVApp.swift; sourceTree = "<group>"; };
 		CDC95B3C2A5CAC1700519E9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		CD1F4C5F2B399B850080ED82 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				CD85B0B02B44B1EA00297925 /* UsedFramework */,
 				CD1F4C822B4460310080ED82 /* Achievement */,
 				CD1F4C7E2B4420330080ED82 /* Tools */,
 				CD1F4C722B436AD50080ED82 /* Skills */,
@@ -273,6 +276,22 @@
 				CD7757802B36A74700DBBEB6 /* Dimension.swift */,
 			);
 			path = Layout;
+			sourceTree = "<group>";
+		};
+		CD85B0B02B44B1EA00297925 /* UsedFramework */ = {
+			isa = PBXGroup;
+			children = (
+				CD85B0B12B44B1F300297925 /* View */,
+			);
+			path = UsedFramework;
+			sourceTree = "<group>";
+		};
+		CD85B0B12B44B1F300297925 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD85B0B22B44B20300297925 /* FrameworkVC.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		CDC95B2C2A5CAC1400519E9D = {
@@ -505,6 +524,7 @@
 				CDF3B6EA2A5FDF6500B37655 /* CVViewModel.swift in Sources */,
 				CD7757812B36A74700DBBEB6 /* Dimension.swift in Sources */,
 				CD7757162B35864200DBBEB6 /* EducationVC.swift in Sources */,
+				CD85B0B32B44B20300297925 /* FrameworkVC.swift in Sources */,
 				CD1F4C6E2B4016930080ED82 /* StaticJSONMapper.swift in Sources */,
 				CD77570A2B344CC100DBBEB6 /* Symbols.swift in Sources */,
 			);
