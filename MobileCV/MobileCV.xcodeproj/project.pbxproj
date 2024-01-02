@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		CD1F4C6A2B3C8C780080ED82 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F4C692B3C8C780080ED82 /* DetailVC.swift */; };
 		CD1F4C6E2B4016930080ED82 /* StaticJSONMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F4C6D2B4016930080ED82 /* StaticJSONMapper.swift */; };
+		CD1F4C752B436B890080ED82 /* SkillsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F4C742B436B890080ED82 /* SkillsVC.swift */; };
+		CD1F4C782B4373120080ED82 /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F4C772B4373120080ED82 /* CustomProgressView.swift */; };
+		CD1F4C812B4420440080ED82 /* ToolsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F4C802B4420440080ED82 /* ToolsVC.swift */; };
 		CD7757082B344C2A00DBBEB6 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7757072B344C2A00DBBEB6 /* Theme.swift */; };
 		CD77570A2B344CC100DBBEB6 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7757092B344CC100DBBEB6 /* Symbols.swift */; };
 		CD77570E2B34766D00DBBEB6 /* GridButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77570D2B34766C00DBBEB6 /* GridButton.swift */; };
@@ -24,7 +27,6 @@
 		CDC95B562A5CAC1800519E9D /* MobileCVUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC95B552A5CAC1800519E9D /* MobileCVUITestsLaunchTests.swift */; };
 		CDC95B642A5CAD3600519E9D /* CV.json in Resources */ = {isa = PBXBuildFile; fileRef = CDC95B632A5CAD3600519E9D /* CV.json */; };
 		CDC95B6A2A5D968100519E9D /* CVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC95B692A5D968100519E9D /* CVModel.swift */; };
-		CDCF63782A60A4380051A1A8 /* ExperienceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCF63772A60A4380051A1A8 /* ExperienceVC.swift */; };
 		CDF3B6EA2A5FDF6500B37655 /* CVViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF3B6E92A5FDF6500B37655 /* CVViewModel.swift */; };
 		CDF3B6EC2A5FE95000B37655 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF3B6EB2A5FE95000B37655 /* HomeVC.swift */; };
 /* End PBXBuildFile section */
@@ -49,6 +51,9 @@
 /* Begin PBXFileReference section */
 		CD1F4C692B3C8C780080ED82 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		CD1F4C6D2B4016930080ED82 /* StaticJSONMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticJSONMapper.swift; sourceTree = "<group>"; };
+		CD1F4C742B436B890080ED82 /* SkillsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsVC.swift; sourceTree = "<group>"; };
+		CD1F4C772B4373120080ED82 /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
+		CD1F4C802B4420440080ED82 /* ToolsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsVC.swift; sourceTree = "<group>"; };
 		CD7757072B344C2A00DBBEB6 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		CD7757092B344CC100DBBEB6 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
 		CD77570D2B34766C00DBBEB6 /* GridButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridButton.swift; sourceTree = "<group>"; };
@@ -67,7 +72,6 @@
 		CDC95B552A5CAC1800519E9D /* MobileCVUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileCVUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CDC95B632A5CAD3600519E9D /* CV.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CV.json; sourceTree = "<group>"; };
 		CDC95B692A5D968100519E9D /* CVModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVModel.swift; sourceTree = "<group>"; };
-		CDCF63772A60A4380051A1A8 /* ExperienceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceVC.swift; sourceTree = "<group>"; };
 		CDF3B6E92A5FDF6500B37655 /* CVViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVViewModel.swift; sourceTree = "<group>"; };
 		CDF3B6EB2A5FE95000B37655 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,9 +104,10 @@
 		CD1F4C5F2B399B850080ED82 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				CD1F4C7E2B4420330080ED82 /* Tools */,
+				CD1F4C722B436AD50080ED82 /* Skills */,
 				CD1F4C6F2B4016F90080ED82 /* Detail */,
-				CD1F4C662B3C7D750080ED82 /* Experience */,
-				CDC95B672A5D965B00519E9D /* View */,
+				CDC95B672A5D965B00519E9D /* Education */,
 				CD1F4C602B399B8E0080ED82 /* Home */,
 			);
 			path = Features;
@@ -142,33 +147,10 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		CD1F4C662B3C7D750080ED82 /* Experience */ = {
-			isa = PBXGroup;
-			children = (
-				CD1F4C682B3C7D8D0080ED82 /* ViewModel */,
-				CD1F4C672B3C7D820080ED82 /* View */,
-			);
-			path = Experience;
-			sourceTree = "<group>";
-		};
-		CD1F4C672B3C7D820080ED82 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				CDCF63772A60A4380051A1A8 /* ExperienceVC.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		CD1F4C682B3C7D8D0080ED82 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		CD1F4C6B2B4016610080ED82 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				CD1F4C762B4372F40080ED82 /* Custom View */,
 				CD1F4C6C2B40167F0080ED82 /* Mapper */,
 			);
 			path = Base;
@@ -194,6 +176,54 @@
 			isa = PBXGroup;
 			children = (
 				CD1F4C692B3C8C780080ED82 /* DetailVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD1F4C712B436AAA0080ED82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD7757152B35864200DBBEB6 /* EducationVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD1F4C722B436AD50080ED82 /* Skills */ = {
+			isa = PBXGroup;
+			children = (
+				CD1F4C732B436B770080ED82 /* View */,
+			);
+			path = Skills;
+			sourceTree = "<group>";
+		};
+		CD1F4C732B436B770080ED82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD1F4C742B436B890080ED82 /* SkillsVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD1F4C762B4372F40080ED82 /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				CD1F4C772B4373120080ED82 /* CustomProgressView.swift */,
+			);
+			path = "Custom View";
+			sourceTree = "<group>";
+		};
+		CD1F4C7E2B4420330080ED82 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				CD1F4C7F2B4420380080ED82 /* View */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		CD1F4C7F2B4420380080ED82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD1F4C802B4420440080ED82 /* ToolsVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -294,12 +324,12 @@
 			path = Database;
 			sourceTree = "<group>";
 		};
-		CDC95B672A5D965B00519E9D /* View */ = {
+		CDC95B672A5D965B00519E9D /* Education */ = {
 			isa = PBXGroup;
 			children = (
-				CD7757152B35864200DBBEB6 /* EducationVC.swift */,
+				CD1F4C712B436AAA0080ED82 /* View */,
 			);
-			path = View;
+			path = Education;
 			sourceTree = "<group>";
 		};
 		CDC95B682A5D966000519E9D /* Utils */ = {
@@ -441,15 +471,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD1F4C752B436B890080ED82 /* SkillsVC.swift in Sources */,
 				CD77570E2B34766D00DBBEB6 /* GridButton.swift in Sources */,
+				CD1F4C812B4420440080ED82 /* ToolsVC.swift in Sources */,
 				CDC95B6A2A5D968100519E9D /* CVModel.swift in Sources */,
 				CD1F4C6A2B3C8C780080ED82 /* DetailVC.swift in Sources */,
 				CD7757142B34850000DBBEB6 /* NavigationView+CustomAppearance.swift in Sources */,
 				CDF3B6EC2A5FE95000B37655 /* HomeVC.swift in Sources */,
 				CDC95B392A5CAC1400519E9D /* MobileCVApp.swift in Sources */,
 				CD7757082B344C2A00DBBEB6 /* Theme.swift in Sources */,
-				CDCF63782A60A4380051A1A8 /* ExperienceVC.swift in Sources */,
 				CD77577E2B36A1A200DBBEB6 /* TypographyStyle.swift in Sources */,
+				CD1F4C782B4373120080ED82 /* CustomProgressView.swift in Sources */,
 				CDF3B6EA2A5FDF6500B37655 /* CVViewModel.swift in Sources */,
 				CD7757812B36A74700DBBEB6 /* Dimension.swift in Sources */,
 				CD7757162B35864200DBBEB6 /* EducationVC.swift in Sources */,

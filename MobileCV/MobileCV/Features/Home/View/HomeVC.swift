@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct HomeVC: View {
-    private let columns = Array(repeating: GridItem(.flexible()),
-                                count: 2)
+    private let columns = Array(repeating: GridItem(.flexible()), count: 2)
+    
     var buttonArray : Array = ["1","2","3","4","5","6"]
     @StateObject var viewModel = CVViewModel()
     
