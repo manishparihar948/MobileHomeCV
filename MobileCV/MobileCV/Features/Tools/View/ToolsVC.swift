@@ -23,7 +23,7 @@ struct ToolsVC: View {
                             .resizable()
                             .scaledToFit()
                             .frame(width: 120, height: 120)
-                            .shadow(color: Theme.cvTheme, radius: 8, x: 0, y: 5)
+                            .shadow(color: Theme.aluminiumColor, radius: 8, x: 0, y: 5)
                     }
                 }
                 .navigationTitle("Tools Use")

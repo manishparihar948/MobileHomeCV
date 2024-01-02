@@ -12,6 +12,7 @@
 		CD1F4C752B436B890080ED82 /* SkillsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F4C742B436B890080ED82 /* SkillsVC.swift */; };
 		CD1F4C782B4373120080ED82 /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F4C772B4373120080ED82 /* CustomProgressView.swift */; };
 		CD1F4C812B4420440080ED82 /* ToolsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F4C802B4420440080ED82 /* ToolsVC.swift */; };
+		CD1F4C852B4460460080ED82 /* AchievementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1F4C842B4460460080ED82 /* AchievementVC.swift */; };
 		CD7757082B344C2A00DBBEB6 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7757072B344C2A00DBBEB6 /* Theme.swift */; };
 		CD77570A2B344CC100DBBEB6 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7757092B344CC100DBBEB6 /* Symbols.swift */; };
 		CD77570E2B34766D00DBBEB6 /* GridButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77570D2B34766C00DBBEB6 /* GridButton.swift */; };
@@ -54,6 +55,7 @@
 		CD1F4C742B436B890080ED82 /* SkillsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsVC.swift; sourceTree = "<group>"; };
 		CD1F4C772B4373120080ED82 /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
 		CD1F4C802B4420440080ED82 /* ToolsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsVC.swift; sourceTree = "<group>"; };
+		CD1F4C842B4460460080ED82 /* AchievementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementVC.swift; sourceTree = "<group>"; };
 		CD7757072B344C2A00DBBEB6 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		CD7757092B344CC100DBBEB6 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
 		CD77570D2B34766C00DBBEB6 /* GridButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridButton.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		CD1F4C5F2B399B850080ED82 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				CD1F4C822B4460310080ED82 /* Achievement */,
 				CD1F4C7E2B4420330080ED82 /* Tools */,
 				CD1F4C722B436AD50080ED82 /* Skills */,
 				CD1F4C6F2B4016F90080ED82 /* Detail */,
@@ -224,6 +227,22 @@
 			isa = PBXGroup;
 			children = (
 				CD1F4C802B4420440080ED82 /* ToolsVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD1F4C822B4460310080ED82 /* Achievement */ = {
+			isa = PBXGroup;
+			children = (
+				CD1F4C832B4460380080ED82 /* View */,
+			);
+			path = Achievement;
+			sourceTree = "<group>";
+		};
+		CD1F4C832B4460380080ED82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD1F4C842B4460460080ED82 /* AchievementVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -472,6 +491,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD1F4C752B436B890080ED82 /* SkillsVC.swift in Sources */,
+				CD1F4C852B4460460080ED82 /* AchievementVC.swift in Sources */,
 				CD77570E2B34766D00DBBEB6 /* GridButton.swift in Sources */,
 				CD1F4C812B4420440080ED82 /* ToolsVC.swift in Sources */,
 				CDC95B6A2A5D968100519E9D /* CVModel.swift in Sources */,
