@@ -44,13 +44,9 @@ struct EducationVC: View {
 }
 
 
-
 #Preview {
     EducationVC(viewModel: CVViewModel())
 }
-
-
-
 
 private extension EducationVC {
     var background: some View {

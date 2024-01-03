@@ -22,6 +22,7 @@
 		CD7757812B36A74700DBBEB6 /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7757802B36A74700DBBEB6 /* Dimension.swift */; };
 		CD85B0B32B44B20300297925 /* FrameworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD85B0B22B44B20300297925 /* FrameworkVC.swift */; };
 		CD85B0B72B4565B900297925 /* ProjectSkillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD85B0B62B4565B900297925 /* ProjectSkillVC.swift */; };
+		CDBD73FC2B460B040017B8D4 /* CompanysDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBD73FB2B460B040017B8D4 /* CompanysDetailVC.swift */; };
 		CDC95B392A5CAC1400519E9D /* MobileCVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC95B382A5CAC1400519E9D /* MobileCVApp.swift */; };
 		CDC95B3D2A5CAC1700519E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC95B3C2A5CAC1700519E9D /* Assets.xcassets */; };
 		CDC95B402A5CAC1700519E9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC95B3F2A5CAC1700519E9D /* Preview Assets.xcassets */; };
@@ -67,6 +68,7 @@
 		CD7757802B36A74700DBBEB6 /* Dimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
 		CD85B0B22B44B20300297925 /* FrameworkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkVC.swift; sourceTree = "<group>"; };
 		CD85B0B62B4565B900297925 /* ProjectSkillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSkillVC.swift; sourceTree = "<group>"; };
+		CDBD73FB2B460B040017B8D4 /* CompanysDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanysDetailVC.swift; sourceTree = "<group>"; };
 		CDC95B352A5CAC1400519E9D /* MobileCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC95B382A5CAC1400519E9D /* MobileCVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileCVApp.swift; sourceTree = "<group>"; };
 		CDC95B3C2A5CAC1700519E9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				CD1F4C692B3C8C780080ED82 /* DetailVC.swift */,
+				CDBD73FB2B460B040017B8D4 /* CompanysDetailVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -547,6 +550,7 @@
 				CD85B0B32B44B20300297925 /* FrameworkVC.swift in Sources */,
 				CD1F4C6E2B4016930080ED82 /* StaticJSONMapper.swift in Sources */,
 				CD77570A2B344CC100DBBEB6 /* Symbols.swift in Sources */,
+				CDBD73FC2B460B040017B8D4 /* CompanysDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
