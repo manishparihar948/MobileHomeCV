@@ -7,10 +7,28 @@
 
 import SwiftUI
 
+struct ButtonModel: Identifiable {
+    let id = UUID()
+    let tag: Int
+    let title: String
+}
+
 struct HomeVC: View {
     private let columns = Array(repeating: GridItem(.flexible()), count: 2)
     
-    var buttonArray : Array = ["1","2","3","4","5","6"]
+    private let buttonAspectRatio: CGFloat = 0.5
+    @State private var selectedButtonTag: Int?
+    
+    let buttonArray : [ButtonModel] = [
+        ButtonModel(tag: 1, title:"Work Experience"),
+        ButtonModel(tag: 2, title:"Education"),
+        ButtonModel(tag: 3, title:"Programming Skills"),
+        ButtonModel(tag: 4, title:"Project Skills"),
+        ButtonModel(tag: 5, title:"Frameworks"),
+        ButtonModel(tag: 6, title:"Tools"),
+        ButtonModel(tag: 7, title:"Achievements & Interest")
+    ]
+    
     @StateObject var viewModel = CVViewModel()
     
     var body: some View {
@@ -39,7 +57,7 @@ private extension HomeVC {
         NavigationStack {
             ScrollView {
                 VStack {
-                    ForEach(viewModel.showCVObject, id: \.self) {cvData in
+                    ForEach(viewModel.showCVObject, id: \.self) { cvData in
                         VStack {
                             // Top View
                             HStack {
@@ -141,59 +159,33 @@ private extension HomeVC {
                             .padding()
                             
                             // Bottom View
-                            /*
-                            VStack(alignment:.center) {
-                                
-                                
-                                HStack(alignment:.center) {
-                                    Group {
-                                        NavigationLink(destination: ExperienceVC()) {
-                                            GridButton(buttonText: "Experience", buttonImage: "rectangle.inset.filled.and.person.filled") {
-                                                print("Experience button tapped")
-                                            }
-                                        }
-                                        
-                                        GridButton(buttonText: "Education", buttonImage: "rectangle.inset.filled.and.person.filled"){
-                                            print("Education butotn tapped")
-                                        }
-                                        
-                                        GridButton(buttonText: "Skills", buttonImage: "rectangle.inset.filled.and.person.filled"){
-                                            print("Skills butotn tapped")
-                                        }
-                                         
-                                        
-                                    }
-                                }
-                                .frame(alignment:.center)
-                                
-                                HStack(alignment:.center) {
-                                    Group {
-                                        GridButton(buttonText: "Interest", buttonImage: "rectangle.inset.filled.and.person.filled"){
-                                            print("Interest butotn tapped")
-                                        }
-                                        GridButton(buttonText: "Achievements", buttonImage: "rectangle.inset.filled.and.person.filled"){
-                                            print("Achievements butotn tapped")
-                                        }
-                                        GridButton(buttonText: "Project", buttonImage: "rectangle.inset.filled.and.person.filled"){
-                                            print("Project butotn tapped")
-                                        }
-                                    }
-                                }
-                                .frame(alignment:.center)
-                            }
-                            */
                             LazyVGrid(columns: columns, spacing:15) {
-                                ForEach(buttonArray, id:\.self){ myCVButton in
-                                    NavigationLink {
-                                        DetailVC()
-                                    } label: {
-                                        Text(myCVButton)
+                                ForEach(buttonArray) { button in
+                                    NavigationLink(
+                                        destination: destinationView(for: button),
+                                        isActive: Binding(
+                                            get: { selectedButtonTag == button.tag },
+                                            set: { isActive in
+                                                if isActive {
+                                                    selectedButtonTag = button.tag
+                                                }
+                                            }
+                                        )
+                                    ) {
+                                        Button(action: {
+                                            selectedButtonTag = button.tag
+                                        }) {
+                                            Text(button.title)
+                                                .padding()
+                                                .frame(width: UIScreen.main.bounds.width / 2 - 30, height: UIScreen.main.bounds.width / 2  * buttonAspectRatio)
+                                                .background(selectedButtonTag == button.tag ? Theme.cvTheme : Color.gray)
+
+                                                .foregroundColor(.white)
+                                                .cornerRadius(8)
+                                        }
                                     }
                                 }
-                               
                             }
-                            
-                            
                         }
                     }
                 }
@@ -206,5 +198,27 @@ private extension HomeVC {
             }
         }
     }
+    
+    func destinationView(for button: ButtonModel) -> some View {
+        switch button.tag {
+        case 1:
+            return AnyView(DetailVC())
+        case 2:
+            return AnyView(EducationVC())
+        case 3:
+            return AnyView(EmptyView()) // AnyView(ProgrammingSkill())
+        case 4:
+            return AnyView(EmptyView()) // AnyView(ProgrammingSkill())
+        case 5:
+            return AnyView(FrameworkVC())
+        case 6:
+            return AnyView(ToolsVC())
+        case 7:
+            return AnyView(AchievementVC())
+        default:
+            return AnyView(EmptyView())
+        }
+    }
+
 }
 

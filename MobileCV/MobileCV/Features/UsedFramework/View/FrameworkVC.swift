@@ -14,7 +14,7 @@ struct FrameworkVC: View {
     var frameworkArray : Array = ["SwiftUI","React-Native","Flutter","Google Firebase","flame-link","Amplitue","Crashlytics", "Fastlane", "CircleCI", "Figma", "Pandas","Numpy", "Keras", "Tensor Flow", "Sci-kit learn", "Matplotlib", "Seaborn", "Selenium", "Django", "Vuejs"]
     
     var body: some View {
-        LazyVGrid(columns:columns,spacing:5){
+        LazyVGrid(columns:columns,spacing:10){
             ForEach(frameworkArray, id:\.self){ usedFramework in
                 Text(usedFramework)
                     .typographyStyle(.subheadline)
