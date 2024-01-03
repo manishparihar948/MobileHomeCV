@@ -15,8 +15,6 @@ struct Item : Codable {
     }
 }
 
-
-
 struct ItemData: Codable, Hashable {
     let id: Int
     let displayName: String
@@ -31,13 +29,13 @@ struct ItemData: Codable, Hashable {
     let designation: String
     let tagline: String
     let intro: String
-    let educationBackground: [EducationBackground]?
+    let educationBackground: [EducationBackground]
     let workExperience: [WorkExperience]
     let programmingSkil: [ProgrammingSkill]?
     let projectSkill: [ProjectSkill]?
     let frameworks: [Frameworks]?
     let tools: [Tools]?
-    let interest: [Interests]
+    let interest: [Interests]?
     let socialNetwork: [SocialNetwork]?
     let spokenLanguage: [SpokenLanguage]?
     let achievement: [Achievements]?
@@ -62,6 +60,32 @@ struct EducationBackground: Codable {
     degreeCourse: String,
     degreeStartYear: String,
     degreeEndYear: String
+    
+    enum CodingKeys : String, CodingKey {
+        case degreeID = "degreeID"
+        case degreeUniversityName = "degreeUniversityName"
+        case degreeUniversityPlace = "degreeUniversityPlace"
+        case degreeUniversityCountry = "degreeUniversityCountry"
+        case degreeName = "degreeName"
+        case degreeCourse = "degreeCourse"
+        case degreeStartYear = "degreeStartYear"
+        case degreeEndYear = "degreeEndYear"
+    }
+    
+    // Implementing the Hashable protocol
+       func hash(into hasher: inout Hasher) {
+           // Use the properties that uniquely identify a WorkExperience instance to generate the hash value
+           hasher.combine(degreeUniversityName)
+           hasher.combine(degreeUniversityPlace)
+           // Combine other properties if necessary
+       }
+       
+       static func == (lhs: EducationBackground, rhs: EducationBackground) -> Bool {
+           // Implement the equality check for WorkExperience instances based on their properties
+           return lhs.degreeUniversityPlace == rhs.degreeUniversityPlace && lhs.degreeUniversityName == rhs.degreeUniversityName
+           // Compare other properties if necessary
+       }
+    
     
 }
 

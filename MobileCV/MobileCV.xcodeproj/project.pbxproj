@@ -21,6 +21,7 @@
 		CD77577E2B36A1A200DBBEB6 /* TypographyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77577D2B36A1A100DBBEB6 /* TypographyStyle.swift */; };
 		CD7757812B36A74700DBBEB6 /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7757802B36A74700DBBEB6 /* Dimension.swift */; };
 		CD85B0B32B44B20300297925 /* FrameworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD85B0B22B44B20300297925 /* FrameworkVC.swift */; };
+		CD85B0B72B4565B900297925 /* ProjectSkillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD85B0B62B4565B900297925 /* ProjectSkillVC.swift */; };
 		CDC95B392A5CAC1400519E9D /* MobileCVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC95B382A5CAC1400519E9D /* MobileCVApp.swift */; };
 		CDC95B3D2A5CAC1700519E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC95B3C2A5CAC1700519E9D /* Assets.xcassets */; };
 		CDC95B402A5CAC1700519E9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC95B3F2A5CAC1700519E9D /* Preview Assets.xcassets */; };
@@ -65,6 +66,7 @@
 		CD77577D2B36A1A100DBBEB6 /* TypographyStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypographyStyle.swift; sourceTree = "<group>"; };
 		CD7757802B36A74700DBBEB6 /* Dimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
 		CD85B0B22B44B20300297925 /* FrameworkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkVC.swift; sourceTree = "<group>"; };
+		CD85B0B62B4565B900297925 /* ProjectSkillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSkillVC.swift; sourceTree = "<group>"; };
 		CDC95B352A5CAC1400519E9D /* MobileCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC95B382A5CAC1400519E9D /* MobileCVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileCVApp.swift; sourceTree = "<group>"; };
 		CDC95B3C2A5CAC1700519E9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -108,10 +110,11 @@
 		CD1F4C5F2B399B850080ED82 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				CD85B0B42B45658900297925 /* ProjectSkill */,
 				CD85B0B02B44B1EA00297925 /* UsedFramework */,
 				CD1F4C822B4460310080ED82 /* Achievement */,
 				CD1F4C7E2B4420330080ED82 /* Tools */,
-				CD1F4C722B436AD50080ED82 /* Skills */,
+				CD1F4C722B436AD50080ED82 /* ProgrammingSkills */,
 				CD1F4C6F2B4016F90080ED82 /* Detail */,
 				CDC95B672A5D965B00519E9D /* Education */,
 				CD1F4C602B399B8E0080ED82 /* Home */,
@@ -194,12 +197,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		CD1F4C722B436AD50080ED82 /* Skills */ = {
+		CD1F4C722B436AD50080ED82 /* ProgrammingSkills */ = {
 			isa = PBXGroup;
 			children = (
 				CD1F4C732B436B770080ED82 /* View */,
 			);
-			path = Skills;
+			path = ProgrammingSkills;
 			sourceTree = "<group>";
 		};
 		CD1F4C732B436B770080ED82 /* View */ = {
@@ -290,6 +293,22 @@
 			isa = PBXGroup;
 			children = (
 				CD85B0B22B44B20300297925 /* FrameworkVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD85B0B42B45658900297925 /* ProjectSkill */ = {
+			isa = PBXGroup;
+			children = (
+				CD85B0B52B4565A900297925 /* View */,
+			);
+			path = ProjectSkill;
+			sourceTree = "<group>";
+		};
+		CD85B0B52B4565A900297925 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD85B0B62B4565B900297925 /* ProjectSkillVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -520,6 +539,7 @@
 				CDC95B392A5CAC1400519E9D /* MobileCVApp.swift in Sources */,
 				CD7757082B344C2A00DBBEB6 /* Theme.swift in Sources */,
 				CD77577E2B36A1A200DBBEB6 /* TypographyStyle.swift in Sources */,
+				CD85B0B72B4565B900297925 /* ProjectSkillVC.swift in Sources */,
 				CD1F4C782B4373120080ED82 /* CustomProgressView.swift in Sources */,
 				CDF3B6EA2A5FDF6500B37655 /* CVViewModel.swift in Sources */,
 				CD7757812B36A74700DBBEB6 /* Dimension.swift in Sources */,

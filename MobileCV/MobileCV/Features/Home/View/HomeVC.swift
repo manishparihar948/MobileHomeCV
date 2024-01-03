@@ -179,7 +179,6 @@ private extension HomeVC {
                                                 .padding()
                                                 .frame(width: UIScreen.main.bounds.width / 2 - 30, height: UIScreen.main.bounds.width / 2  * buttonAspectRatio)
                                                 .background(selectedButtonTag == button.tag ? Theme.cvTheme : Color.gray)
-
                                                 .foregroundColor(.white)
                                                 .cornerRadius(8)
                                         }
@@ -202,13 +201,13 @@ private extension HomeVC {
     func destinationView(for button: ButtonModel) -> some View {
         switch button.tag {
         case 1:
-            return AnyView(DetailVC())
+            return AnyView(DetailVC(viewModel: viewModel))
         case 2:
-            return AnyView(EducationVC())
+            return AnyView(EducationVC(viewModel: viewModel))
         case 3:
             return AnyView(EmptyView()) // AnyView(ProgrammingSkill())
         case 4:
-            return AnyView(EmptyView()) // AnyView(ProgrammingSkill())
+            return AnyView(ProjectSkillVC()) // AnyView(ProgrammingSkill())
         case 5:
             return AnyView(FrameworkVC())
         case 6:

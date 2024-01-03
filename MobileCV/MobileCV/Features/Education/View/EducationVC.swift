@@ -8,7 +8,13 @@
 import SwiftUI
 
 struct EducationVC: View {
-    var educationArray : Array = ["Berlin University of Applied Science","Rajiv Gandhi Technical University"]
+    
+    @StateObject var viewModel = CVViewModel()
+
+    init(viewModel: CVViewModel) {
+           _viewModel = StateObject(wrappedValue: viewModel)
+       }
+
 
     var body: some View {
         ZStack {
@@ -16,19 +22,35 @@ struct EducationVC: View {
             
             VStack {
                 List {
-                    ForEach(educationArray,id:\.self) { myEducation in
-                        Text(myEducation)
+                    ForEach(viewModel.showCVObject, id:\.self){ cvData in
+                        ForEach(cvData.educationBackground, id: \.degreeID) { myEducation in
+                            VStack(alignment:.leading, spacing:5) {
+                                Text("\(myEducation.degreeUniversityName)")
+                                    .typographyStyle(.detail_headline)
+                                Text("\(myEducation.degreeName) - \(myEducation.degreeCourse)")
+                                    .typographyStyle(.detail_subheadline)
+                                Text("\(myEducation.degreeUniversityPlace), \(myEducation.degreeUniversityCountry)")
+                                    .typographyStyle(.detail_body)
+                                Text("\(myEducation.degreeStartYear)-\(myEducation.degreeEndYear)")
+                                    .typographyStyle(.detail_body)
+                            }
+                        }
                     }
-                }
+                }.navigationTitle("Education")
             }
         }
     }
    
 }
 
+
+
 #Preview {
-    EducationVC()
+    EducationVC(viewModel: CVViewModel())
 }
+
+
+
 
 private extension EducationVC {
     var background: some View {
