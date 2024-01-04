@@ -205,9 +205,9 @@ private extension HomeVC {
         case 2:
             return AnyView(EducationVC(viewModel: viewModel))
         case 3:
-            return AnyView(EmptyView()) // AnyView(ProgrammingSkill())
+            return AnyView(SkillsVC(viewModel: viewModel))
         case 4:
-            return AnyView(ProjectSkillVC()) // AnyView(ProgrammingSkill())
+            return AnyView(ProjectSkillVC()) // AnyView(ProjectSkillVC())
         case 5:
             return AnyView(FrameworkVC(viewModel: viewModel))
         case 6:

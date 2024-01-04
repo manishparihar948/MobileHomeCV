@@ -8,50 +8,66 @@
 import SwiftUI
 
 struct SkillsVC: View {
+    
     @State private var progressValue: Double = 3.0
     private let columns = Array(repeating: GridItem(.flexible()), count: 1)
-
+    
+    @StateObject var viewModel = CVViewModel()
+    
+    init(viewModel: CVViewModel) {
+        _viewModel = StateObject(wrappedValue: viewModel)
+    }
+    
     var body: some View {
         
         ZStack {
             background
             
-            VStack {
-                LazyVGrid(columns:columns) {
-                    VStack(spacing:.zero) {
-                        HStack {
-                             Text("SwiftUI")
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .padding(.horizontal,5)
-                            
-                             //ProgressView(value: progressValue, total: 5)
-                            CustomProgressView(progressValue: $progressValue, label: "SwiftUI")
-                                .padding(.horizontal,5)
-                            
-                            Text("\(Int(progressValue))")
+            ScrollView {
+                VStack {
+                    LazyVGrid(columns:columns, spacing:10) {
+                        VStack(spacing:10) {
+                            ForEach(viewModel.showCVObject, id:\.self){ cvData in
+                                ForEach(cvData.programmingSkill, id: \.skillID) { mySkill in
+                                    HStack {
+                                        Text("\(mySkill.skillValue)")
+                                            .typographyStyle(.detail_subheadline)
+                                            .padding(.horizontal,10)
+                                        
+                                        if let skillPoints = Double(mySkill.skillPoints) {
+                                            ProgressView(value: skillPoints, total: 5)
+                                                .progressViewStyle(CustomProgressViewStyle(color: Theme.cvTheme))
+                                                .frame(maxWidth:.infinity )
+                                                        .padding(.horizontal, 5)
+                                                    Text(String(format: "%.0f%%", skillPoints * 20))
+                                                        .foregroundColor(.primary)
+                                                        .typographyStyle(.detail_body)
+                                        }
+                                    }
+                                }
+                            }
                         }
-                        .frame(maxWidth: .infinity, alignment: .center)
-                        
-                       
+                        .padding(.all)
+                        //.background(Color.yellow)
+                        .clipShape(RoundedRectangle(cornerRadius: 16,style: .continuous))
                     }
-                    .padding(.all)
-                    .background(Color.yellow)
-                    .clipShape(RoundedRectangle(cornerRadius: 16,style: .continuous))
                 }
+                .navigationTitle("Programming Skills")
+                .padding(.all)
             }
-            .padding(.all)
         }
     }
 }
 
-#Preview {
-    SkillsVC()
-}
 
+#Preview {
+    SkillsVC(viewModel: CVViewModel())
+}
 
 private extension SkillsVC {
     var background: some View {
-        Theme.background
+        Theme.whiteColor
             .ignoresSafeArea(edges: .all)
     }
 }
+

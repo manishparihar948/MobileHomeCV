@@ -13,7 +13,7 @@ struct EducationVC: View {
 
     init(viewModel: CVViewModel) {
            _viewModel = StateObject(wrappedValue: viewModel)
-       }
+    }
 
 
     var body: some View {

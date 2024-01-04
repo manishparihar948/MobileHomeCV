@@ -31,7 +31,7 @@ struct ItemData: Codable, Hashable {
     let intro: String
     let educationBackground: [EducationBackground]
     let workExperience: [WorkExperience]
-    let programmingSkil: [ProgrammingSkill]?
+    let programmingSkill: [ProgrammingSkill]
     let projectSkill: [ProjectSkill]?
     let frameworks: [Frameworks]
     let tools: [Tools]?
@@ -145,7 +145,16 @@ struct ProgrammingSkill : Codable {
     enum CodingKeys: String, CodingKey {
             case skillID = "skillId"
             case skillValue, skillPoints
-        }
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(skillValue)
+        hasher.combine(skillPoints)
+    }
+       
+    static func == (lhs: ProgrammingSkill, rhs: ProgrammingSkill) -> Bool {
+        return lhs.skillValue == rhs.skillValue && lhs.skillPoints == rhs.skillPoints
+    }
 }
 
 struct ProjectSkill : Codable {
