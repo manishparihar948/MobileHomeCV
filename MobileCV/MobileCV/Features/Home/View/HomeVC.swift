@@ -209,7 +209,7 @@ private extension HomeVC {
         case 4:
             return AnyView(ProjectSkillVC()) // AnyView(ProgrammingSkill())
         case 5:
-            return AnyView(FrameworkVC())
+            return AnyView(FrameworkVC(viewModel: viewModel))
         case 6:
             return AnyView(ToolsVC())
         case 7:

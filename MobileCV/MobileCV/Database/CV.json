@@ -338,6 +338,11 @@
                     "frameworkID":"f16",
                     "frameworkSubject":"web-development",
                     "frameworkValue":"Flask"
+                },
+                {
+                    "frameworkID":"f17",
+                    "frameworkSubject":"web-development",
+                    "frameworkValue":"Selenium"
                 }
             ],
             "tools":[

@@ -33,7 +33,7 @@ struct ItemData: Codable, Hashable {
     let workExperience: [WorkExperience]
     let programmingSkil: [ProgrammingSkill]?
     let projectSkill: [ProjectSkill]?
-    let frameworks: [Frameworks]?
+    let frameworks: [Frameworks]
     let tools: [Tools]?
     let interest: [Interests]?
     let socialNetwork: [SocialNetwork]?
@@ -85,8 +85,7 @@ struct EducationBackground: Codable {
            return lhs.degreeUniversityPlace == rhs.degreeUniversityPlace && lhs.degreeUniversityName == rhs.degreeUniversityName
            // Compare other properties if necessary
        }
-    
-    
+  
 }
 
 struct WorkExperience: Codable {
@@ -163,6 +162,22 @@ struct Frameworks : Codable {
     let frameworkID : String,
         frameworkSubject : String,
         frameworkValue : String
+    
+    enum CodingKeys : String, CodingKey {
+        case frameworkID = "frameworkID"
+        case frameworkSubject = "frameworkSubject"
+        case frameworkValue = "frameworkValue"
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(frameworkSubject)
+        hasher.combine(frameworkValue)
+    }
+       
+    static func == (lhs: Frameworks, rhs: Frameworks) -> Bool {
+        return lhs.frameworkSubject == rhs.frameworkSubject && lhs.frameworkValue == rhs.frameworkValue
+        // Compare other properties if necessary
+    }
 }
 
 enum FrameworkSubject: String, Codable {
