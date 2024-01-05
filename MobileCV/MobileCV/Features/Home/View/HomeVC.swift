@@ -15,10 +15,10 @@ struct ButtonModel: Identifiable {
 
 struct HomeVC: View {
     private let columns = Array(repeating: GridItem(.flexible()), count: 2)
+    private let horizontalColumns = Array(repeating: GridItem(.flexible()), count: 1)
     
     private let buttonAspectRatio: CGFloat = 0.5
     @State private var selectedButtonTag: Int?
-    
     let buttonArray : [ButtonModel] = [
         ButtonModel(tag: 1, title:"Work Experience"),
         ButtonModel(tag: 2, title:"Education"),
@@ -30,7 +30,7 @@ struct HomeVC: View {
     ]
     
     @StateObject var viewModel = CVViewModel()
-    
+        
     var body: some View {
         ZStack {
             background
@@ -47,7 +47,7 @@ struct HomeVC_Previews: PreviewProvider {
 }
 
 private extension HomeVC {
-    
+        
     var background: some View {
         Theme.background
             .ignoresSafeArea(edges: .all)
@@ -58,7 +58,7 @@ private extension HomeVC {
             ScrollView {
                 VStack {
                     ForEach(viewModel.showCVObject, id: \.self) { cvData in
-                        VStack {
+                        VStack(alignment:.leading, spacing:0) {
                             // Top View
                             HStack {
                                 Image("cv")
@@ -70,21 +70,25 @@ private extension HomeVC {
                                         Circle()
                                             .stroke(Theme.cvTheme, lineWidth: 5)
                                     )
-                                    .padding(.leading,5)
+                                    .padding(.leading,10)
+                                    .padding(.trailing,10)
                                 
                                 VStack {
-                                    Text(cvData.displayName)
+                                    Text("\(cvData.displayName)")
                                         .typographyStyle(.headline)
                                         .padding(.top,5)
                                     
-                                    Text(cvData.designation)
-                                        .typographyStyle(.subheadline)
-                                        .padding(.bottom,5)
+                                    HStack {
+                                        Text("\(cvData.designation)")
+                                            .typographyStyle(.subheadline)
+                                            .padding(.bottom,5)
+                                            .padding(.trailing,5)
+                                    }
                                 }
                             }
                             
                             // Middle View
-                            HStack(alignment:.center) {
+                            HStack {
                                 Spacer()
                                 VStack(alignment: .leading) {
                                     HStack {
@@ -148,13 +152,41 @@ private extension HomeVC {
                             }
                             .padding()
                             
+                            // Social Network
+                            HStack {
+                                ForEach(cvData.socialNetwork, id: \.socialID) { title in
+                                    
+                                    
+                                    Button(action: {
+                                        // Action for each button
+                                        print("Button tapped: \(title.socialName)")
+                                        if let url = URL(string: title.socialValue), UIApplication.shared.canOpenURL(url) {
+                                            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                                        }
+                                    }) {
+                                        Text("\(title.socialName)")
+                                            .typographyStyle(.detail_subheadline)
+                                            .foregroundStyle(.white)
+                                            .cornerRadius(8)
+                                    }
+                                    .padding(5)
+                                    .background(Theme.cvTheme)
+                                    .cornerRadius(5)
+                                     
+                                    
+
+                                }
+                            }
+                            .padding()
+                            
                             Divider()
                             
                             // Description View
-                            HStack(alignment: .center) {
+                            HStack(alignment: .top) {
                                 Spacer()
                                 Text("\(cvData.intro)")
                                     .typographyStyle(.subheadline)
+                                    .frame(maxWidth: .infinity, alignment: .leading)
                             }
                             .padding()
                             
@@ -218,6 +250,5 @@ private extension HomeVC {
             return AnyView(EmptyView())
         }
     }
-
 }
 

@@ -36,7 +36,7 @@ struct ItemData: Codable, Hashable {
     let frameworks: [Frameworks]
     let tools: [Tools]?
     let interests: [Interests]
-    let socialNetwork: [SocialNetwork]?
+    let socialNetwork: [SocialNetwork]
     let spokenLanguage: [SpokenLanguage]?
     let achievements: [Achievements]
     
@@ -223,6 +223,23 @@ struct SocialNetwork : Codable {
     let socialID : String,
         socialName : String,
         socialValue : String
+    
+    enum CodingKeys : String, CodingKey {
+        case socialID = "socialID"
+        case socialName = "socialName"
+        case socialValue = "socialValue"
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(socialID)
+        hasher.combine(socialName)
+        hasher.combine(socialValue)
+    }
+       
+    static func == (lhs: SocialNetwork, rhs: SocialNetwork) -> Bool {
+        return lhs.socialID == rhs.socialID && lhs.socialName == rhs.socialName
+    }
+    
 }
 
 struct SpokenLanguage : Codable {

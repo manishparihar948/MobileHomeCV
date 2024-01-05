@@ -409,20 +409,14 @@
                 },
                 {
                     "socialID":"s02",
-                    "socialName":"Xing",
-                    "socialValue":"https://www.xing.com/profile/Manish_Parihar/cv"
+                    "socialName":"Linkedin",
+                    "socialValue":"https://www.linkedin.com/in/manishparihar948/"
                 },
                 {
                     "socialID":"s03",
-                    "socialName":"Linkedin",
-                    "socialValue":""
-                },
-                {
-                    "socialID":"s04",
-                    "socialName":"Facebook",
-                    "socialValue":""
+                    "socialName":"Xing",
+                    "socialValue":"https://www.xing.com/profile/Manish_Parihar/cv"
                 }
-                
             ],
             "spokenLanguage":[
                     {
