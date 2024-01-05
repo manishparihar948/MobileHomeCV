@@ -35,16 +35,15 @@ struct ItemData: Codable, Hashable {
     let projectSkill: [ProjectSkill]?
     let frameworks: [Frameworks]
     let tools: [Tools]?
-    let interest: [Interests]?
+    let interests: [Interests]
     let socialNetwork: [SocialNetwork]?
     let spokenLanguage: [SpokenLanguage]?
-    let achievement: [Achievements]?
+    let achievements: [Achievements]
     
     static func == (lhs: ItemData, rhs: ItemData) -> Bool {
         return
             lhs.firstName == rhs.firstName
     }
-    
     
     func hash(into hasher: inout Hasher) {
             hasher.combine(firstName)
@@ -203,6 +202,21 @@ struct Tools : Codable {
 struct Interests : Codable {
     let interestsID : String,
         interestsName : String
+    
+    enum CodingKeys : String, CodingKey {
+        case interestsID = "interestsID"
+        case interestsName = "interestsName"
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(interestsID)
+        hasher.combine(interestsName)
+    }
+       
+    static func == (lhs: Interests, rhs: Interests) -> Bool {
+        return lhs.interestsID == rhs.interestsID && lhs.interestsName == rhs.interestsName
+    }
+    
 }
 
 struct SocialNetwork : Codable {
@@ -221,6 +235,22 @@ struct Achievements : Codable {
         achievementsName : String,
         achievementsDesc : String,
         achievementsYear : String
+    
+    enum CodingKeys : String, CodingKey {
+        case achievementsID = "achievementsID"
+        case achievementsName = "achievementsName"
+        case achievementsDesc = "achievementsDesc"
+        case achievementsYear = "achievementsYear"
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(achievementsID)
+        hasher.combine(achievementsName)
+    }
+       
+    static func == (lhs: Achievements, rhs: Achievements) -> Bool {
+        return lhs.achievementsID == rhs.achievementsID && lhs.achievementsName == rhs.achievementsName
+    }
 }
 
 

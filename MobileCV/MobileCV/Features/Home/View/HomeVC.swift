@@ -213,7 +213,7 @@ private extension HomeVC {
         case 6:
             return AnyView(ToolsVC())
         case 7:
-            return AnyView(AchievementVC())
+            return AnyView(AchievementVC(viewModel: viewModel))
         default:
             return AnyView(EmptyView())
         }

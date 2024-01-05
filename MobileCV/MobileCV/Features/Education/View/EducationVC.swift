@@ -27,8 +27,10 @@ struct EducationVC: View {
                             VStack(alignment:.leading, spacing:5) {
                                 Text("\(myEducation.degreeUniversityName)")
                                     .typographyStyle(.detail_headline)
+                                    .foregroundStyle(Theme.silverBG)
                                 Text("\(myEducation.degreeName) - \(myEducation.degreeCourse)")
                                     .typographyStyle(.detail_subheadline)
+                                    .foregroundStyle(Theme.cvTheme)
                                 Text("\(myEducation.degreeUniversityPlace), \(myEducation.degreeUniversityCountry)")
                                     .typographyStyle(.detail_body)
                                 Text("\(myEducation.degreeStartYear)-\(myEducation.degreeEndYear)")

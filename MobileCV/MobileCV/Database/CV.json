@@ -387,7 +387,7 @@
                    "toolsName":"Miro"
                 }
             ],
-            "interest":[
+            "interests":[
                     {
                         "interestsID":"i01",
                         "interestsName":"Playing Ukulele"
@@ -449,7 +449,7 @@
                 },
                 {
                     "achievementsID":"a03",
-                    "achievementsName":"Presentation & Poster",
+                    "achievementsName":"Presentation & Poster Making",
                     "achievementsDesc":"First Prize In Presentation, Poster Making in Leap & Scale Growth Partner",
                     "achievementsYear":"2017"
                 }

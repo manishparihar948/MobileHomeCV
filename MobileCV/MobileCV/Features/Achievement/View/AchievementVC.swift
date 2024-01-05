@@ -9,41 +9,67 @@ import SwiftUI
 
 struct AchievementVC: View {
     
-    var body: some View {
-        NavigationStack {
-            List {
-                Section(header: Text("Achievenemts")) {
-                    VStack(alignment:.leading, spacing: 10) {
-                        HStack {
-                            Image(systemName: "trophy")
-                            Text("President Award")
-                                .typographyStyle(.subheadline)
-                            Spacer()
-                            Text("2003")
-                                .typographyStyle(.detail_body)
-                                .foregroundStyle(Theme.aluminiumColor)
-                        }
-                        Text("Awarded by the President of India, Dr.A.P.J Abdul Kalam Sir in India Scouts")
-                            .typographyStyle(.detail_subheadline)
-                            .foregroundStyle(Theme.silverBG)
+    @StateObject var viewModel = CVViewModel()
 
-                        
-                           
-                    }
-                }
-                Section(header:Text("Interest")){
-                    VStack(alignment:.leading, spacing: 10) {
-                        Text("Playing Ukulele")
-                        Text("Cycling")
-                        Text("Urban Farming")
-                    }
-                    .typographyStyle(.subheadline)
-                }
-            }
+    init(viewModel: CVViewModel) {
+           _viewModel = StateObject(wrappedValue: viewModel)
+    }
+    
+    var body: some View {
+        ZStack {
+            background
+            frontend
         }
     }
 }
 
 #Preview {
-    AchievementVC()
+    AchievementVC(viewModel: CVViewModel())
+}
+
+private extension AchievementVC {
+    var background: some View {
+        Theme.background
+            .ignoresSafeArea(edges: .all)
+    }
+    
+    var frontend: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            List {
+                ForEach(viewModel.showCVObject, id:\.self){ cvData in
+                    Section(header: Text("Achievements").font(.headline).foregroundColor(.primary)) {
+                        ForEach(cvData.achievements, id: \.achievementsID) { myAchievements in
+                            VStack(alignment:.leading, spacing:5) {
+                                HStack {
+                                    Image(systemName: "trophy")
+                                        .foregroundStyle(Theme.cvTheme)
+                                    Text("\(myAchievements.achievementsName)")
+                                        .typographyStyle(.subheadline)
+                                    Spacer()
+                                    Text("\(myAchievements.achievementsYear)")
+                                        .typographyStyle(.detail_body)
+                                        .foregroundStyle(Theme.aluminiumColor)
+                                }
+                                Text("\(myAchievements.achievementsDesc)")
+                                    .typographyStyle(.detail_subheadline)
+                                    .foregroundStyle(Theme.silverBG)
+                            }
+                        }
+                    }
+                    
+                    Section(header: Text("Interests").font(.headline).foregroundColor(.primary)) {
+                        ForEach(cvData.interests, id: \.interestsID) { myInterest in
+                            VStack(alignment:.leading, spacing:5) {
+                                Text("\(myInterest.interestsName)")
+                                    .typographyStyle(.detail_headline)
+                                    .foregroundStyle(Theme.silverBG)
+                                
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
 }
