@@ -90,7 +90,7 @@ private extension HomeVC {
                             // Middle View
                             HStack {
                                 Spacer()
-                                VStack(alignment: .leading) {
+                                VStack(alignment: .leading, spacing:0) {
                                     HStack {
                                         Symbols.calenderIcon
                                             .foregroundStyle(Theme.cvTheme)
@@ -115,9 +115,9 @@ private extension HomeVC {
                                     }
                                     .padding(.leading,0)
                                 }
-                                .padding(.leading,20)
+                                .padding(.leading,10)
                                 Spacer()
-                                VStack (alignment: .center){
+                                VStack (alignment: .leading){
                                     
                                     HStack(alignment:.center)
                                     {
@@ -150,13 +150,12 @@ private extension HomeVC {
                                 .padding(.trailing,10)
                                 Spacer()
                             }
-                            .padding()
+                            .padding(.top, 10)
+                          
                             
                             // Social Network
                             HStack {
                                 ForEach(cvData.socialNetwork, id: \.socialID) { title in
-                                    
-                                    
                                     Button(action: {
                                         // Action for each button
                                         print("Button tapped: \(title.socialName)")
@@ -170,11 +169,9 @@ private extension HomeVC {
                                             .cornerRadius(8)
                                     }
                                     .padding(5)
+                                    .frame(width:120, height:40)
                                     .background(Theme.cvTheme)
                                     .cornerRadius(5)
-                                     
-                                    
-
                                 }
                             }
                             .padding()
