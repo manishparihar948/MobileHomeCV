@@ -70,7 +70,7 @@ private extension HomeVC {
                                         Circle()
                                             .stroke(Theme.cvTheme, lineWidth: 5)
                                     )
-                                    .padding(.leading,10)
+                                    .padding(.leading,20)
                                     .padding(.trailing,10)
                                 
                                 VStack {
@@ -152,7 +152,6 @@ private extension HomeVC {
                             }
                             .padding(.top, 10)
                           
-                            
                             // Social Network
                             HStack {
                                 ForEach(cvData.socialNetwork, id: \.socialID) { title in
