@@ -10,7 +10,7 @@ import SwiftUI
 enum Theme {
     static let background = Color("background")
     static let text = Color("text")
-    static let cvTheme = Color("cv-theme")
+    static let cvTheme = Color("ColorGooseberryDark")
     static let whiteColor = Color("whiteColor")
     static let silverBG = Color("silverBG")
     static let lightGreen = Color("lightGreen")
@@ -20,6 +20,7 @@ enum Theme {
     static let eggPlant = Color("eggPlant")
     static let lavenderColor = Color("lavenderColor")
     static let aluminiumColor = Color("aluminiumColor")
+    static let colorCherryLight = Color("ColorCherryLight")
 }
 
 
