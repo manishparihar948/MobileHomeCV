@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct OnBoardingView: View {
+    
+    var onboardingContents: [OnBoarding] = onBoardingsData
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+          ForEach(onboardingContents[0...5]) { item in
+              OnBoardingCardView(onboarding: item)
+          } //: LOOP
+        } //: TAB
+        .tabViewStyle(PageTabViewStyle())
+        .padding(.vertical, 20)
     }
 }
 

@@ -34,6 +34,12 @@
 		CDC95B6A2A5D968100519E9D /* CVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC95B692A5D968100519E9D /* CVModel.swift */; };
 		CDF3B6EA2A5FDF6500B37655 /* CVViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF3B6E92A5FDF6500B37655 /* CVViewModel.swift */; };
 		CDF3B6EC2A5FE95000B37655 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF3B6EB2A5FE95000B37655 /* HomeVC.swift */; };
+		CDF61B0F2B4C4CBA0051FD8E /* CoverLetterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF61B0E2B4C4CBA0051FD8E /* CoverLetterVC.swift */; };
+		CDF61B152B4C5BF20051FD8E /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF61B142B4C5BF20051FD8E /* OnBoardingView.swift */; };
+		CDF61B172B4C5C6E0051FD8E /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF61B162B4C5C6E0051FD8E /* OnBoarding.swift */; };
+		CDF61B192B4C5C990051FD8E /* OnBoardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF61B182B4C5C990051FD8E /* OnBoardingData.swift */; };
+		CDF61B1B2B4C616B0051FD8E /* OnBoardingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF61B1A2B4C616B0051FD8E /* OnBoardingCardView.swift */; };
+		CDF61B1D2B4C62B40051FD8E /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF61B1C2B4C62B40051FD8E /* StartButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +90,12 @@
 		CDC95B692A5D968100519E9D /* CVModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVModel.swift; sourceTree = "<group>"; };
 		CDF3B6E92A5FDF6500B37655 /* CVViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVViewModel.swift; sourceTree = "<group>"; };
 		CDF3B6EB2A5FE95000B37655 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		CDF61B0E2B4C4CBA0051FD8E /* CoverLetterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverLetterVC.swift; sourceTree = "<group>"; };
+		CDF61B142B4C5BF20051FD8E /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
+		CDF61B162B4C5C6E0051FD8E /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
+		CDF61B182B4C5C990051FD8E /* OnBoardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingData.swift; sourceTree = "<group>"; };
+		CDF61B1A2B4C616B0051FD8E /* OnBoardingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCardView.swift; sourceTree = "<group>"; };
+		CDF61B1C2B4C62B40051FD8E /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +126,7 @@
 		CD1F4C5F2B399B850080ED82 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				CDF61B0C2B4C4CA30051FD8E /* CoverLetter */,
 				CD85B0B42B45658900297925 /* ProjectSkill */,
 				CD85B0B02B44B1EA00297925 /* UsedFramework */,
 				CD1F4C822B4460310080ED82 /* Achievement */,
@@ -163,6 +176,7 @@
 		CD1F4C6B2B4016610080ED82 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				CDF61B102B4C5BA20051FD8E /* OnBoarding */,
 				CD1F4C762B4372F40080ED82 /* Custom View */,
 				CD1F4C6C2B40167F0080ED82 /* Mapper */,
 				CDBD73FD2B48732D0017B8D4 /* CustomButton.swift */,
@@ -403,6 +417,58 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		CDF61B0C2B4C4CA30051FD8E /* CoverLetter */ = {
+			isa = PBXGroup;
+			children = (
+				CDF61B0D2B4C4CAB0051FD8E /* View */,
+			);
+			path = CoverLetter;
+			sourceTree = "<group>";
+		};
+		CDF61B0D2B4C4CAB0051FD8E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CDF61B0E2B4C4CBA0051FD8E /* CoverLetterVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CDF61B102B4C5BA20051FD8E /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				CDF61B132B4C5BC50051FD8E /* DummyData */,
+				CDF61B122B4C5BBC0051FD8E /* Model */,
+				CDF61B112B4C5BB30051FD8E /* View */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		CDF61B112B4C5BB30051FD8E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CDF61B142B4C5BF20051FD8E /* OnBoardingView.swift */,
+				CDF61B1A2B4C616B0051FD8E /* OnBoardingCardView.swift */,
+				CDF61B1C2B4C62B40051FD8E /* StartButtonView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CDF61B122B4C5BBC0051FD8E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CDF61B162B4C5C6E0051FD8E /* OnBoarding.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CDF61B132B4C5BC50051FD8E /* DummyData */ = {
+			isa = PBXGroup;
+			children = (
+				CDF61B182B4C5C990051FD8E /* OnBoardingData.swift */,
+			);
+			path = DummyData;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -536,24 +602,30 @@
 			files = (
 				CD1F4C752B436B890080ED82 /* SkillsVC.swift in Sources */,
 				CD1F4C852B4460460080ED82 /* AchievementVC.swift in Sources */,
+				CDF61B152B4C5BF20051FD8E /* OnBoardingView.swift in Sources */,
 				CD77570E2B34766D00DBBEB6 /* GridButton.swift in Sources */,
 				CD1F4C812B4420440080ED82 /* ToolsVC.swift in Sources */,
 				CDC95B6A2A5D968100519E9D /* CVModel.swift in Sources */,
+				CDF61B1D2B4C62B40051FD8E /* StartButtonView.swift in Sources */,
+				CDF61B192B4C5C990051FD8E /* OnBoardingData.swift in Sources */,
 				CD1F4C6A2B3C8C780080ED82 /* DetailVC.swift in Sources */,
 				CD7757142B34850000DBBEB6 /* NavigationView+CustomAppearance.swift in Sources */,
 				CDF3B6EC2A5FE95000B37655 /* HomeVC.swift in Sources */,
 				CDC95B392A5CAC1400519E9D /* MobileCVApp.swift in Sources */,
 				CD7757082B344C2A00DBBEB6 /* Theme.swift in Sources */,
 				CD77577E2B36A1A200DBBEB6 /* TypographyStyle.swift in Sources */,
+				CDF61B1B2B4C616B0051FD8E /* OnBoardingCardView.swift in Sources */,
 				CDBD73FE2B48732E0017B8D4 /* CustomButton.swift in Sources */,
 				CD85B0B72B4565B900297925 /* ProjectSkillVC.swift in Sources */,
 				CD1F4C782B4373120080ED82 /* CustomProgressView.swift in Sources */,
+				CDF61B0F2B4C4CBA0051FD8E /* CoverLetterVC.swift in Sources */,
 				CDF3B6EA2A5FDF6500B37655 /* CVViewModel.swift in Sources */,
 				CD7757812B36A74700DBBEB6 /* Dimension.swift in Sources */,
 				CD7757162B35864200DBBEB6 /* EducationVC.swift in Sources */,
 				CD85B0B32B44B20300297925 /* FrameworkVC.swift in Sources */,
 				CD1F4C6E2B4016930080ED82 /* StaticJSONMapper.swift in Sources */,
 				CD77570A2B344CC100DBBEB6 /* Symbols.swift in Sources */,
+				CDF61B172B4C5C6E0051FD8E /* OnBoarding.swift in Sources */,
 				CDBD73FC2B460B040017B8D4 /* CompanysDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

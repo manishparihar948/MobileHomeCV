@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct MobileCVApp: App {
+    @AppStorage("isOnboarding") var isOnboarding: Bool = true
+    
     var body: some Scene {
         WindowGroup {
-            HomeVC()
+            if isOnboarding {
+                OnBoardingView()
+            } else {
+                HomeVC()
+                //CoverLetterVC()
+            }
+           
         }
     }
 }
